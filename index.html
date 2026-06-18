@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>caclutor</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    
+    <input placeholder="0..." disabled id="screen">
+    
+    <div class="row">
+      <button onclick="numbers('ANS')">ANS</button>
+     <button class="operator" onclick="numbers('(')">(</button>
+
+<button class="operator" onclick="numbers(')')">)</button>
+      <button class="clear" onclick="clears(1)">C</button>
+      <button class="operator" onclick="deletes()">⌫</button>
+    </div>
+    
+        <div class="row">
+      <button onclick="numbers(7)">7</button>
+      <button onclick="numbers(8)">8</button>
+      <button onclick="numbers(9)">9</button>
+      <button class="operator" onclick="numbers('+')">+</button>
+      <button class="operator" onclick="numbers('-')">-</button>
+    </div>
+    
+        <div class="row">
+      <button onclick="numbers(4)">4</button>
+      <button onclick="numbers(5)">5</button>
+      <button onclick="numbers(6)">6</button>
+      <button class="operator" onclick="numbers('*')">*</button>
+      <button class="operator" onclick="numbers('/')">/</button>
+    </div>
+    
+        <div class="row">
+      <button onclick="numbers(1)">1</button>
+      <button onclick="numbers(2)">2</button>
+      <button onclick="numbers(3)">3</button>
+     <button class="operator" onclick="numbers('√(')">√</button>
+      <button class="operator" onclick="numbers('^')">^</button>
+    </div>
+    
+        <div class="row">
+      <button onclick="numbers(0)">0</button>
+      <button onclick="numbers('.')">.</button>
+      <button>V1.0</button>
+         
+<button class="operator" onclick="numbers('%')">%</button>
+      <button class="equals" onclick="result()">=</button>
+    </div>
+    
+  </div>
+  
+  <div class="logs">
+    <div>
+      <h5>Logs Will be here :</h5>
+      <button onclick="clears(2)">clear</button>
+    </div>
+    
+  </div>
+  
+  
+  
+  <script src="js.js"></script>
+</body>
+
+</html>
